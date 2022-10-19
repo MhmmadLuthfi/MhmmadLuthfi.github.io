@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+    <body>
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form>
+            <div class="user-box">
+                <label>Username</label>
+                <input type="text" id="username" autocomplete="off">
+            </div>
+            <div class="pass-box">
+                <label>Password</label>
+                <input type="password" id="password" autocomplete="off">
+            </div>
+            <div class="button-form">
+                <button type="button" class="submit" onclick="login()">
+                   LOGIN
+                </button>
+            </div>
+        </form>
+        <script>
+            function login(){
+                var user = document.getElementById("username").value;
+                var pass = document.getElementById("password").value;
+
+                if (user == "lutpii" && pass =="lutpii"){
+                    window.location.href="index.html";
+                }else{
+                    alert("username dan password anda salah");
+                }
+            }
+        </script>
+    </body>
+</html>
